@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+header section p{
+    color:#333333;
+    font-size: 18px; 
+    background-color:#D1891C;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+header section h1{
+    color:#FFFFFF;
+    font-size: 42px;
+    background-color: #00669F;
+    font-weight:400;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 4.5rem;
+    margin-block: 5rem;
+}
+
+.herocard{
+    position: relative;
+    width: 450px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.frameone,
+.frametwo,
+.framethree,
+.framefour{
+    display: block;
+    height: 250px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.frameone{
+    background-image:url('../img/frameBatman.png');
+    background-size: cover;
+}
+
+.frametwo{
+    background-image:url('../img/frameMujermaravilla.png');
+    background-size: cover;
+}
+
+.framethree{
+    background-image:url('../img/frameSuperman.png');
+    background-size: cover;
+}
+
+.framefour{
+    background-image:url('../img/frameHarley.png');
+    background-size: cover;
+}
+
+.hero img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top:180px;
+    left: 150px;
+}
+
+.heart {
+    margin: 13px 0px 0px 13px;
+}
+
+.info{
+    background-color: #F3F3F3;
+    height: 350px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding: 75px 18px 20px;
+}
+
+.info p {
+    color: #333333;
+    height: 130px;
+    font-family: 'Roboto', 'serif';
+    font-weight: 400;
+    margin-block: 17px;
+    line-height: 18px;
+}
+
+button {
+    background-color: #00669F;
+    border: none;
+    color: #F3F3F3;
+    height: 48px;
+    margin-inline: auto;
+    width: 128px;
+    margin: 13px 68px;
+}
+
+.circle{
+    background-color: #00669F;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 30px;
+    right: 50px;
+    
+}
+
+footer{
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 40px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+footer p{
+    color:#FFF9F9;
+    font-size: 18px;
+    
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (max-width: 880px) {
+
+    .herocard {
+        width: 303px;
+    }
+
+    .hero img {
+        top: 165px;
+        left: 95px;
+    }
+
+    .info {
+        width: 303px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 14px;
+        margin-block: 14px;
+    }
+
+    button {
+        height: 40px;
+        margin: auto 0 0;
+    }
+
+    .circle {
+        top: 39rem;
+        right: 1.5rem;
+    }
+
+    footer {
+        padding: 4px 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer img {
+        width: 70px;
+    }
+
+}
